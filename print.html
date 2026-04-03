@@ -1,0 +1,303 @@
+<!DOCTYPE HTML>
+<html lang="fr" class="rust" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Crafting Code B3</title>
+        <meta name="robots" content="noindex">
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+    </head>
+    <body class="sidebar-visible no-js">
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "rust";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('rust')
+            html.classList.add(theme);
+            var body = document.querySelector('body');
+            body.classList.remove('no-js')
+            body.classList.add('js');
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var body = document.querySelector('body');
+            var sidebar = null;
+            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+            }
+            sidebar_toggle.checked = sidebar === 'visible';
+            body.classList.remove('sidebar-visible');
+            body.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><li class="part-title">Modules</li><li class="chapter-item expanded "><a href="index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="01.craft/index.html"><strong aria-hidden="true">2.</strong> Craft</a></li><li class="chapter-item expanded affix "><li class="part-title">Évaluations</li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <!-- Track and set sidebar scroll position -->
+        <script>
+            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
+            sidebarScrollbox.addEventListener('click', function(e) {
+                if (e.target.tagName === 'A') {
+                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
+                }
+            }, { passive: true });
+            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
+            sessionStorage.removeItem('sidebar-scroll');
+            if (sidebarScrollTop) {
+                // preserve sidebar scroll position when navigating via links within sidebar
+                sidebarScrollbox.scrollTop = sidebarScrollTop;
+            } else {
+                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
+                var activeSection = document.querySelector('#sidebar .active');
+                if (activeSection) {
+                    activeSection.scrollIntoView({ block: 'center' });
+                }
+            }
+        </script>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Crafting Code B3</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/ythirion/crafting-code-b3" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p><img src="img/crafting-code.webp" alt="Crafting Code" /></p>
+<ul>
+<li><a href="01.craft/">Artisanat logiciel</a></li>
+<li><a href="02.code-quality/">Mais au fait c'est quoi la qualité ?</a></li>
+<li><a href="03.code-discovery/">Découvrir une nouvelle base de code</a></li>
+<li><a href="04.clean-code/">Clean Code</a></li>
+<li><a href="05.solid/">Écrire du code S.O.L.I.D</a></li>
+<li><a href="06.design-patterns/">Une histoire de patterns</a></li>
+<li><a href="07.object-calisthenics/">Object Calisthenics</a></li>
+<li><a href="08.tdd-inside-out/">T.D.D - Inside Out</a></li>
+<li><a href="09.tdd-outside-in/">T.D.D - Outside-In</a></li>
+<li><a href="10.legacy-code/">Legacy Code</a></li>
+<li><a href="11.green-craft/">Green Craft</a></li>
+</ul>
+<h2 id="evaluations"><a class="header" href="#evaluations">Evaluations</a></h2>
+<ul>
+<li><a href="evals/01.CODE-SMELLS.html">Identifier les Code smells</a></li>
+<li><a href="evals/02.SOLID-CALISTHENICS.html">Solid Calisthenics</a></li>
+<li><a href="evals/03.NEW-FEATURE.html">Ajout de feature</a></li>
+<li><a href="evals/04.QCM.html">QCM</a></li>
+</ul>
+<h2 id="to-do"><a class="header" href="#to-do">To do</a></h2>
+<ul>
+<li>Print cartes SOLID</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="artisanat-logiciel"><a class="header" href="#artisanat-logiciel">Artisanat Logiciel</a></h1>
+<h2 id="3-mots--idées-510-min"><a class="header" href="#3-mots--idées-510-min">3 mots / idées (5–10 min)</a></h2>
+<p>Notez 3 mots ou idées que vous associez à <em>Artisanat logiciel</em> / <em>Software Craftsmanship</em>.</p>
+<p>Travail :</p>
+<ul>
+<li>1 min individuel</li>
+<li>2 min en binôme</li>
+<li>Mise en commun visuelle</li>
+</ul>
+<h3 id="débriefe-guidé"><a class="header" href="#débriefe-guidé">Débriefe guidé</a></h3>
+<p>Regrouper les mots sous 4 familles :</p>
+<ul>
+<li>Qualité</li>
+<li>Professionnalisme</li>
+<li>Excellence technique</li>
+<li>Apprentissage continu</li>
+</ul>
+<h2 id="the-software-craftsman-1520-min"><a class="header" href="#the-software-craftsman-1520-min">The Software Craftsman (15–20 min)</a></h2>
+<p><img src="01.craft/resources/The-Software-Craftsman.webp" alt="The Software Craftsman" /></p>
+<h2 id="craft-ou-pas-craft--15-min"><a class="header" href="#craft-ou-pas-craft--15-min">“Craft ou pas Craft ?” (15 min)</a></h2>
+<p>Travail en petits groupes :</p>
+<ol>
+<li>En quoi, ce comportement est désaligné avec l’artisanat logiciel ?</li>
+<li>Quel serait le comportement Craft ?</li>
+<li>Quelles pratiques concrètes ? Quoi mettre en place ?</li>
+</ol>
+<p>Détails de l'atelier <a href="01.craft/CRAFT_PAS_CRAFT.html">ici</a></p>
+<h2 id="synthèse-collective-10-min"><a class="header" href="#synthèse-collective-10-min">Synthèse collective (10 min)</a></h2>
+<p>Revenir aux mots du début.</p>
+<blockquote>
+<p>“Après cette session, changeriez-vous un ou plusieurs de vos 3 mots ?”</p>
+</blockquote>
+<p>L’artisanat logiciel ce n’est pas :</p>
+<ul>
+<li>Faire du code parfait</li>
+<li>Être élitiste</li>
+<li>Être dogmatique</li>
+</ul>
+<p>C’est :</p>
+<ul>
+<li>Se comporter en professionnel</li>
+<li>Assumer la qualité</li>
+<li>Progresser en permanence</li>
+<li>Construire avec fierté</li>
+</ul>
+<h2 id="ressources"><a class="header" href="#ressources">Ressources</a></h2>
+<ul>
+<li><a href="01.craft/resources/The%20Software%20Craftsman.pdf">Infographie livre "The Software Craftsman"</a></li>
+<li><a href="https://www.dunod.com/sciences-techniques/software-craft-tdd-clean-code-et-autres-pratiques-essentielles-0">Livre "Software Craft - TDD, Clean Code et autres pratiques essentielles"</a></li>
+<li><a href="https://www.youtube.com/@artisandeveloppeur">Chaine Youtube "Artisan Développeur"</a></li>
+<li><a href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/">Livre "The Pragmatic Programmer"</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+        <script src="js/mermaid.min.js"></script>
+        <script src="js/mermaid-init.js"></script>
+
+        <script>
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+
+    </div>
+    </body>
+</html>
