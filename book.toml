@@ -7,7 +7,7 @@ src = "."
 [output.html]
 default-theme = "rust"
 site-url = "/crafting-code-b3/"
-git-repository-url = "https://github.com/ythirion/crafting-code-b3"
+git-repository-url = "https://github.com/Coda-Dijon/crafting-code-b3"
 additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
 
 [output.html.search]
