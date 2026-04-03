@@ -3,19 +3,22 @@ name: Deploy to Github pages
 on:
   workflow_dispatch:
   workflow_run:
-    workflows: ["Green IT Analysis"]
+    workflows: ["Build"]
     types:
       - completed
 
 permissions:
-  contents: write
+  pages: write
+  id-token: write
 
 jobs:
   deploy:
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
-      - name: Deploy to GH Pages
-        uses: peaceiris/actions-gh-pages@v4
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./book
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

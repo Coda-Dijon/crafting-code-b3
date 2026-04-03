@@ -1,4 +1,4 @@
-name: Green IT Analysis
+name: Build
 on:
   push:
     branches: [ main ]
@@ -25,3 +25,8 @@ jobs:
 
       - name: GreenIT Analysis
         uses: ythirion/greenit-analysis-action@0.1.0
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./book
