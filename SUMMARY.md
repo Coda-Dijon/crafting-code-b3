@@ -4,6 +4,3 @@
 
 - [Introduction](README.md)
 - [Craft](01.craft/README.md)
-
-# Évaluations
-

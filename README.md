@@ -14,12 +14,6 @@
 - [Legacy Code](10.legacy-code/)
 - [Green Craft](11.green-craft/)
 
-## Evaluations
-- [Identifier les Code smells](evals/01.CODE-SMELLS.md)
-- [Solid Calisthenics](evals/02.SOLID-CALISTHENICS.md)
-- [Ajout de feature](evals/03.NEW-FEATURE.md)
-- [QCM](evals/04.QCM.md)
-
 ## To do
 - Print cartes SOLID
 
