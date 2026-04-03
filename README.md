@@ -1,3 +1,5 @@
+[![Deploy to GitHub Pages](https://github.com/Coda-Dijon/crafting-code-b3/actions/workflows/deploy.yml/badge.svg)](https://github.com/Coda-Dijon/crafting-code-b3/actions/workflows/deploy.yml)
+
 ![Crafting Code](img/crafting-code.webp)
 
 - [Artisanat logiciel](01.craft/)

@@ -1,0 +1,4 @@
+- name: 'Main page'
+  url: 'http://localhost:3000/'
+- name: 'Craft module'
+  url: 'http://localhost:3000/01.craft/index.html'
