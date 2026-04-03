@@ -25,11 +25,6 @@ jobs:
       - name: Build site
         run: mdbook build
 
-      - name: auto minify the files
-        uses: nizarmah/auto-minify@v3
-        with:
-          directory: ./book
-
       - name: Start site
         run: |
           mdbook serve &
