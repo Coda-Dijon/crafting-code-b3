@@ -1,0 +1,14 @@
+SUMMARY.md
+  h_1842ce48583c63 11
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "a6050d5c21dc2b7509e1a3170fc0a008e1196f99",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
