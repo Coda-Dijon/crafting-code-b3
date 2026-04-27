@@ -54,7 +54,7 @@ L'idée : partir de la **surface** (ce qui est visible de l'extérieur) et desce
 - On identifie plus vite les zones à risque ou à enjeux
 
 ## Comprendre un projet inconnu (25 min)
-Prendre en main la base de code `EcoTrip Calculator` qui nous servira de `fil rouge` en utilisant cette [checklist](CHECKLIST.md).
+Prendre en main la base de code [`EcoTrip Calculator`](https://github.com/Coda-Dijon/eco-trip-calculator) qui nous servira de `fil rouge` en utilisant cette [checklist](CHECKLIST.md).
 
 ### Débriefe (10 min)
 Tour de table : chaque groupe partage ses réponses.
@@ -67,7 +67,7 @@ Questions de debriefe :
 
 ### Ce que l'IA ne fait pas à ta place
 
-| Ce que l'IA peut faire      | Ce que toi seul peux faire                  |
+| Ce que l'IA peut faire      | Ce que toi seul peut faire                  |
 |-----------------------------|---------------------------------------------|
 | Résumer un fichier          | Décider si ce résumé est fiable             |
 | Générer un diagramme        | Valider qu'il correspond à la réalité       |
