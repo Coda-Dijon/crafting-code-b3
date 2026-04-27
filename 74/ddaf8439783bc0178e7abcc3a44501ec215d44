@@ -1,0 +1,14 @@
+03.code-discovery/README.md
+  h_1842ce48583c63 57,70
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "74ddaf8439783bc0178e7abcc3a44501ec215d44",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
