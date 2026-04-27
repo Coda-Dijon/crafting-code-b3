@@ -44,6 +44,11 @@ C’est :
 * Progresser en permanence
 * Construire avec fierté
 
+## Le Craft à l'heure de l'`IA`
+Article de Sandro Mancuso disponible ici : [Software Craftsmanship in the AI Era](https://www.codurance.com/publications/software-craftsmanship-in-the-ai-era).
+
+[L'article en bref](CRAFT_IA.md)
+
 ## Ressources
 - [Infographie livre "The Software Craftsman"](resources/The%20Software%20Craftsman.pdf)
 - [Livre "Software Craft - TDD, Clean Code et autres pratiques essentielles"](https://www.dunod.com/sciences-techniques/software-craft-tdd-clean-code-et-autres-pratiques-essentielles-0)

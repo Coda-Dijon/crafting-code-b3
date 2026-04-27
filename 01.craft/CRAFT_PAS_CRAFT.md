@@ -128,7 +128,7 @@ Justification :
 
 ---
 
-## Faire émerger les pratiques :
+## Faire émerger les pratiques
 
 * TDD
 * Refactoring continu

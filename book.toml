@@ -5,9 +5,11 @@ language = "fr"
 src = "."
 
 [output.html]
-default-theme = "rust"
+default-theme = "light"
+preferred-dark-theme = "coda"
+additional-css = ["theme/css/coda.css"]
 site-url = "/crafting-code-b3/"
-git-repository-url = "https://github.com/Coda-Dijon/crafting-code-b3"
+git-repository-url = "https://github.com/ythirion/crafting-code-b3"
 additional-js = ["js/mermaid.min.js", "js/mermaid-init.js"]
 
 [output.html.search]
