@@ -11,3 +11,7 @@
   - [Solution](02.code-quality/IDENTIFY_TESTS_SOLUTION.md)
 
 ---
+
+# Prendre en main une base de code
+- [Code Discovery](03.code-discovery/README.md)
+  - [Checklist](03.code-discovery/CHECKLIST.md)

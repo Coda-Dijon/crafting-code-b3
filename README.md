@@ -1,6 +1,8 @@
 ![Crafting Code](img/crafting-code.webp)
 
 - [Artisanat logiciel](01.craft/)
+- [Mais au fait c'est quoi la qualité ?](02.code-quality/)
+- [Découvrir une nouvelle base de code](03.code-discovery/)
 
 <div style="text-align: center;">
   <a href="https://bff.ecoindex.fr/redirect/?url=https://coda-dijon.github.io/crafting-code-b3/" target="_blank">
