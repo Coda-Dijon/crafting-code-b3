@@ -28,3 +28,7 @@
 
 # Évaluations
 - [Code Smells](evals/01.CODE-SMELLS.md)
+
+---
+
+[Notes prises durant le cours](00.notes/README.md)
