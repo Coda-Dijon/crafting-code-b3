@@ -15,3 +15,9 @@
 # Prendre en main une base de code
 - [Code Discovery](03.code-discovery/README.md)
   - [Checklist](03.code-discovery/CHECKLIST.md)
+
+---
+
+# Écrire du code propre
+- [Clean Code](04.clean-code/README.md)
+  - [Crappy Driven Development](04.clean-code/crappy-driven-development/README.md)
