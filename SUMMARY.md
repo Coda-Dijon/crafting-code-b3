@@ -21,3 +21,5 @@
 # Écrire du code propre
 - [Clean Code](04.clean-code/README.md)
   - [Crappy Driven Development](04.clean-code/crappy-driven-development/README.md)
+- [SOLID](05.solid/README.md)
+  - [SOLID Kata](05.solid/solid-kata/README.md)

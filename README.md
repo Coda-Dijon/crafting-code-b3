@@ -3,6 +3,8 @@
 - [Artisanat logiciel](01.craft/)
 - [Mais au fait c'est quoi la qualité ?](02.code-quality/)
 - [Découvrir une nouvelle base de code](03.code-discovery/)
+- [Clean Code](04.clean-code/)
+- [Écrire du code S.O.L.I.D](05.solid/)
 
 <div style="text-align: center;">
   <a href="https://bff.ecoindex.fr/redirect/?url=https://coda-dijon.github.io/crafting-code-b3/" target="_blank">
