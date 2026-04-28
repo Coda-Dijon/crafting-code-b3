@@ -23,3 +23,8 @@
   - [Crappy Driven Development](04.clean-code/crappy-driven-development/README.md)
 - [SOLID](05.solid/README.md)
   - [SOLID Kata](05.solid/solid-kata/README.md)
+
+---
+
+# Évaluations
+- [Code Smells](evals/01.CODE-SMELLS.md)
