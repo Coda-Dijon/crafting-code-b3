@@ -23,6 +23,7 @@
   - [Crappy Driven Development](04.clean-code/crappy-driven-development/README.md)
 - [SOLID](05.solid/README.md)
   - [SOLID Kata](05.solid/solid-kata/README.md)
+- [Design Patterns](06.design-patterns/README.md)
 
 ---
 
