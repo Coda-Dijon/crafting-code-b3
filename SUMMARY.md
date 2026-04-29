@@ -31,6 +31,7 @@
 # Évaluations
 - [Code Smells](evals/01.CODE-SMELLS.md)
 - [SOLID & Calisthenics](evals/02.SOLID-CALISTHENICS.md)
+  - [Refactoring Template](evals/REFACTORING-TEMPLATE.md)
 
 ---
 
