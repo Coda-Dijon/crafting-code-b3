@@ -32,8 +32,7 @@ Les 23 patterns sont regroupés en **3 familles** selon leur intention :
 
 ---
 
-## [Adapter *(Structural)*](https://refactoring.guru/design-patterns/adapter)
-
+## Adapter *(Structural)*
 > Aussi connu sous le nom de **Wrapper**.
 
 Le pattern Adapter permet à des classes aux interfaces incompatibles de collaborer ensemble. Il crée une abstraction intermédiaire qui traduit l'interface d'un composant existant vers celle attendue par le reste du système.
@@ -116,9 +115,11 @@ classDiagram
 
 `AudioPlayer` ne connaît que `MediaPlayer`. `MediaAdapter` fait le pont — ajouter `AviPlayer` ne touche pas à `AudioPlayer`.
 
+Plus d'infos [ici](https://refactoring.guru/design-patterns/adapter).
+
 ---
 
-## [State *(Behavioral)*](https://refactoring.guru/design-patterns/state)
+## State *(Behavioral)*
 
 Le pattern State permet à un objet de **modifier son comportement lorsque son état interne change** — comme si l'objet changeait de classe à l'exécution.
 
@@ -254,9 +255,11 @@ Ajouter un état `Archived` revient à créer `ArchivedState` — sans toucher �
 | *Open/Closed* : ajouter un état sans toucher aux autres     | —                                                                 |
 | Élimine les longues chaînes de `if/else` conditionnels      | —                                                                 |
 
+Plus d'infos [ici](https://refactoring.guru/design-patterns/state).
+
 ---
 
-## [Strategy *(Behavioral)*](https://refactoring.guru/design-patterns/strategy)
+## Strategy *(Behavioral)*
 
 Le pattern Strategy consiste à **extraire un algorithme de sa classe hôte** pour le placer dans une classe dédiée. Plusieurs stratégies (algorithmes) peuvent ainsi coexister et être **sélectionnées à l'exécution** selon le contexte.
 
@@ -344,9 +347,11 @@ classDiagram
 
 Ajouter `LinkedInStrategy` ne touche ni à `SocialConnector` ni aux stratégies existantes. Chaque stratégie est testable indépendamment.
 
+Plus d'infos [ici](https://refactoring.guru/design-patterns/strategy).
+
 ---
 
-## [Singleton *(Creational)*](https://refactoring.guru/design-patterns/singleton)
+## Singleton *(Creational)*
 
 Le Singleton **restreint l'instanciation d'une classe à un seul objet**. Utile quand un unique objet doit coordonner des actions à l'échelle du système (logger, pool de connexions, configuration…).
 
@@ -407,7 +412,9 @@ Le Singleton est souvent considéré comme un **anti-pattern** dans les codebase
 
 > Avant d'utiliser un Singleton, demandez-vous si un simple objet injecté via un framework d'injection de dépendances (Spring, Guice…) ne serait pas plus adapté.
 
-## [Builder *(Creational)*](https://refactoring.guru/design-patterns/builder)
+Plus d'infos [ici](https://refactoring.guru/design-patterns/singleton).
+
+## Builder *(Creational)*
 
 Le pattern Builder permet de **construire des objets complexes étape par étape**, en séparant la construction de l'objet de sa représentation finale. Il résout le problème des **constructeurs télescopiques** : quand un objet a de nombreux paramètres optionnels, les constructeurs se multiplient ou deviennent illisibles.
 
@@ -522,6 +529,8 @@ classDiagram
     Email "1" *-- "1" Builder : classe interne
     Builder ..> Email : crée
 ```
+
+Plus d'infos [ici](https://refactoring.guru/design-patterns/builder).
 
 ### Application aux tests — Test Data Builders
 
