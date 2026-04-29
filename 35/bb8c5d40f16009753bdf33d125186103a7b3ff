@@ -1,0 +1,16 @@
+evals/02.SOLID-CALISTHENICS.md
+  h_1842ce48583c63 1-60
+SUMMARY.md
+  h_1842ce48583c63 33
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "35bb8c5d40f16009753bdf33d125186103a7b3ff",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
