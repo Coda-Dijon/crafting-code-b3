@@ -119,6 +119,10 @@ module.exports = { ZbeubZbeub };
 - Ajout de logs inutiles en `console`
 - Détérioration de la performance
 
+## Design Patterns
+Quels `Design Patterns` on connait ?
+![Design Patterns](img/IMG_8908.webp)
+
 ## Ressources
 - [Plugin - Code Complexity](https://plugins.jetbrains.com/plugin/21667-code-complexity/)
 - [EditorConfig](https://editorconfig.org/)

@@ -10,6 +10,7 @@
 
 ## Evaluations
 - [Identifier les Code smells](evals/01.CODE-SMELLS.md)
+- [Solid Calisthenics](evals/02.SOLID-CALISTHENICS.md)
 
 [Notes prises durant le cours](00.notes/)
 
