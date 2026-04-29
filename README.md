@@ -6,6 +6,7 @@
 - [Clean Code](04.clean-code/)
 - [Écrire du code S.O.L.I.D](05.solid/)
 - [Une histoire de patterns](06.design-patterns/)
+- [Object Calisthenics](07.object-calisthenics/)
 
 ## Evaluations
 - [Identifier les Code smells](evals/01.CODE-SMELLS.md)

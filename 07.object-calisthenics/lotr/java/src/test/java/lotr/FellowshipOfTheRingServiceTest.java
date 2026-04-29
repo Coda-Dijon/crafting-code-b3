@@ -1,0 +1,5 @@
+package lotr;
+
+class FellowshipOfTheRingServiceTest {
+
+}

@@ -24,6 +24,7 @@
 - [SOLID](05.solid/README.md)
   - [SOLID Kata](05.solid/solid-kata/README.md)
 - [Design Patterns](06.design-patterns/README.md)
+- [Object Calisthenics](07.object-calisthenics/README.md)
 
 ---
 
