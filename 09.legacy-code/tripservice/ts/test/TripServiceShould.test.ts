@@ -1,7 +1,7 @@
-import "jest";
+import { describe, expect, it } from "vitest";
 
 describe("TripServiceShould", () => {
     it("...", () => {
-        expect(4 + 4).toBe(9);
+        expect(42).toBe("universal answer");
     });
 });
