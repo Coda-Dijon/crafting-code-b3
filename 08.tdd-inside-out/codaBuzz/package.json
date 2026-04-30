@@ -1,0 +1,16 @@
+{
+	"name": "typescript-kata-starter",
+	"type": "module",
+	"author": "Yoan Thirion",
+	"license": "MIT",
+	"scripts": {
+		"tdd": "vitest watch"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.8.0",
+		"@types/node": "^22.0.0",
+		"tsx": "^4.16.0",
+		"typescript": "^5.5.0",
+		"vitest": "^2.0.0"
+	}
+}
