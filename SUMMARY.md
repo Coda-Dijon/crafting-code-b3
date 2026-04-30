@@ -30,6 +30,7 @@
 
 # Test-Driven Development
 - [TDD Inside-Out](08.tdd-inside-out/README.md)
+  - [Coda katas](08.tdd-inside-out/CODE-KATAS.md)
 
 ---
 
