@@ -55,7 +55,7 @@ Le [RGAA](https://accessibilite.numerique.gouv.fr/) est le pendant accessibilit�
 
 ### NumÉcoDiag
 
-[NumÉcoDiag](https://ecoresponsable.numerique.gouv.fr/publications/referentiel-numerique-responsable/) est l'outil de diagnostic proposé par la DINUM pour évaluer la maturité d'une organisation sur le numérique responsable.
+[NumÉcoDiag](https://ecoresponsable.numerique.gouv.fr/ressources/documents-reference/referentiel-general-ecoconception/numecodiag/) est l'outil de diagnostic proposé par la DINUM pour évaluer la maturité d'une organisation sur le numérique responsable.
 
 ---
 
