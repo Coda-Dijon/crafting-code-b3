@@ -123,6 +123,12 @@ module.exports = { ZbeubZbeub };
 Quels `Design Patterns` on connait ?
 ![Design Patterns](img/IMG_8908.webp)
 
+### Appliquer le pattern `Strategy` sur `Eco-Trip
+Le repo git utilisé pour introduire le pattern `Strategy` pour le moteur de calcul d'émission de `CO2` est disponible [ici](rsc/eco-trip-calculator-strategy.zip).
+
+Tu peux suivre les différentes étapes en rejouant les commits :
+![Implement Strategy Pattern](img/strategy-pattern.webp)
+
 ## Ressources
 - [Plugin - Code Complexity](https://plugins.jetbrains.com/plugin/21667-code-complexity/)
 - [EditorConfig](https://editorconfig.org/)
