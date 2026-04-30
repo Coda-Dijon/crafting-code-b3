@@ -1,0 +1,16 @@
+SUMMARY.md
+  h_1842ce48583c63 42-46
+10.green-craft/README.md
+  h_1842ce48583c63 1-276
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "cb4e081b66a1de19a315d424246cd7d724224876",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
