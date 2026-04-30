@@ -41,6 +41,11 @@ Tornhill apporte une dimension **sociale et organisationnelle** : les fichiers l
 
 La seule exception : si vous devez modifier le code pour *ajouter* des tests, seuls les **refactorings automatisés** (via l'IDE) sont autorisés — sans changer le comportement.
 
+![Legacy code refactoring tips](img/tips.webp)
+
+- Start testing from shortest to deepest branch
+- Start refactoring from deepest to shortest branch
+
 ---
 
 ## Techniques pour sécuriser du code legacy
@@ -331,18 +336,7 @@ class TripService(val tripDAO: TripDAO) {
 }
 ```
 
----
-
-### [Bonus] Mutation Testing
-
-Une fois le code couvert, validez la qualité de vos tests avec **Stryker** ou **PiTest**.
-
-Exemples de mutants typiques à tuer :
-- Supprimer la vérification `loggedInUser == null`
-- Inverser la condition `isFriendWith`
-- Retourner une liste vide au lieu de `findTripsByUser(user)`
-
-> Si un mutant survit, votre test ne prouve pas ce qu'il prétend prouver.
+Guide étape par étape disponible [ici](https://github.com/ythirion/scala-kata-logs/blob/main/TripServiceKata/solution/step-by-step.md).
 
 ---
 
