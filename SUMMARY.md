@@ -43,6 +43,8 @@
 - [Code Smells](evals/01.CODE-SMELLS.md)
 - [SOLID & Calisthenics](evals/02.SOLID-CALISTHENICS.md)
   - [Refactoring Template](evals/REFACTORING-TEMPLATE.md)
+- [New Feature](evals/03.NEW-FEATURE.md)
+- [QCM](evals/04.QCM.md)
 
 ---
 
