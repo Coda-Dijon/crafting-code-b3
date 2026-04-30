@@ -1,0 +1,14 @@
+09.legacy-code/tripservice/ts/package.json
+  h_1842ce48583c63 8,15-18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.3.4",
+  "base_commit_sha": "b279abe9defa6594f702f53fe842b9a0796bcae8",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
