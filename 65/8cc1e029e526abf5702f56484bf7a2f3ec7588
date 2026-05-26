@@ -1,0 +1,12 @@
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.5.2",
+  "base_commit_sha": "658cc1e029e526abf5702f56484bf7a2f3ec7588",
+  "prompts": {},
+  "humans": {
+    "h_1842ce48583c63": {
+      "author": "Yoan Thirion"
+    }
+  }
+}
